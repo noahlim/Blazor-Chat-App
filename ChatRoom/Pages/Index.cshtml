@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<component type="typeof(ChatRoom.Components.Chat)" render-mode="Server" />
+
+@section Scripts {
+    <script src="_framework/blazor.server.js"></script>
+}
